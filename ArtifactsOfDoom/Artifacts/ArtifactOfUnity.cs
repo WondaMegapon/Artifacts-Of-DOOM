@@ -120,7 +120,7 @@ namespace ArtifactGroup
 				orig.Invoke(self, damageReport);
 				if (ArtifactEnabled && damageReport.victim.body.isPlayerControlled && OptionsLink.AOU_DeathRecovery.Value == true) // check if a player died
 				{
-					MessageHandler.globalMessage(damageReport.victim.body.GetUserName() + " Has died! He will still receive items over time, though");
+					MessageHandler.globalMessage(damageReport.victim.body.GetUserName() + " has died! They will still receive items over time.");
 					if (!deathStorage.dead_players.Contains(damageReport.victim.body.GetUserName()))
 					{
 						deathStorage.dead_players.Add(damageReport.victim.body.GetUserName());
